@@ -29,11 +29,11 @@ module.exports = {
       },
       backgroundImage: {
         'accent-gradient': 'linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%)',
-        'hero': 'url("/src/img/hero.png")',
+        'hero': 'url("../src/img/hero.png")',
         'transition-top': 'linear-gradient(to top, transparent, #fff)',
         'transition-bot': 'linear-gradient(to bottom, transparent, #fff)',
-        'blueShape': 'url("/src/img/blue-shape.svg")',
-        'blueShape2': 'url("/src/img/blue-shape2.svg")',
+        'blueShape': 'url("../src/img/blue-shape.svg")',
+        'blueShape2': 'url("../src/img/blue-shape2.svg")',
       },
     },
     container: {

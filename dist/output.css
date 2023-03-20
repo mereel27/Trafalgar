@@ -677,6 +677,10 @@ html {
   right: 0px;
 }
 
+.right-\[-60px\] {
+  right: -60px;
+}
+
 .right-\[20px\] {
   right: 20px;
 }
@@ -695,18 +699,6 @@ html {
 
 .top-\[50px\] {
   top: 50px;
-}
-
-.left-\[-190px\] {
-  left: -190px;
-}
-
-.right-\[-190px\] {
-  right: -190px;
-}
-
-.right-\[-60px\] {
-  right: -60px;
 }
 
 .isolate {
@@ -2054,11 +2046,11 @@ html {
 }
 
 .bg-blueShape2 {
-  background-image: url("/src/img/blue-shape2.svg");
+  background-image: url("../src/img/blue-shape2.svg");
 }
 
 .bg-hero {
-  background-image: url("/src/img/hero.png");
+  background-image: url("../src/img/hero.png");
 }
 
 .bg-transition-bot {
@@ -3440,14 +3432,6 @@ blockquote p::after {
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-\[-100px\] {
-    right: -100px;
-  }
-
-  .lg\:right-\[-60px\] {
-    right: -60px;
-  }
-
   .lg\:mb-\[265px\] {
     margin-bottom: 265px;
   }
@@ -3563,10 +3547,6 @@ blockquote p::after {
 }
 
 @media (min-width: 1280px) {
-  .xl\:right-\[-190px\] {
-    right: -190px;
-  }
-
   .xl\:mb-14 {
     margin-bottom: 3.5rem;
   }
