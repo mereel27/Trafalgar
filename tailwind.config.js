@@ -2,7 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./src/index.html', './src/**/*.{html,js}',],
+  content: ['./index.html', './**/*.{html,js}',],
   theme: {
     extend: {
       boxShadow: {
