@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --service-box-height: 355px;
+  }
+  html {
+    font-family: 'Mulish', sans-serif;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  @apply text-3xl leading-heading md:text-4xl md:leading-heading lg:text-5xl lg:leading-heading mb-6
+}
+
+h2 {
+  @apply text-2xl leading-heading md:text-3xl md:leading-heading lg:text-4xl lg:leading-heading mb-6 text-center;
+}
+
+h3 {
+  @apply xxs:leading-9 leading-[56px] text-2xl;
+}
+
+a {
+  @apply inline-block text-accent-color whitespace-nowrap hover:underline cursor-pointer;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+.service-box {
+  @apply flex flex-col justify-start items-start
+  px-8 md:px-10 py-9 md:py-11 
+  w-full
+  sm:w-[calc((100%-15px)/2)] 
+  md:w-[calc((100%-35px)/2)] 
+  lg:w-[calc((100%-35px*2)/3)] 
+  h-[355px] 
+  rounded-box 
+  bg-white;
+}
+
+.box-shadow {
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.lh-heading {
+  @apply leading-heading md:leading-heading lg:leading-heading;
+}
+
+.services:before {
+  @apply absolute content-[''] top-[200px] opacity-60 sm:bg-[length:_70%] lg:bg-contain bg-[url('../src/img/blue-shape.svg')] bg-no-repeat z-[-1];
+  width: 938px;
+  height: 670px;
+}
+
+.boxes-container:before {
+  @apply absolute content-[''] z-[-1] top-1/2 right-0 bg-[url('../src/img/bg-dots.svg')] bg-no-repeat bg-contain;
+  transform: translate(50%, -50%);
+  width: 132px;
+  height: 115px;
+}
+
+.btn-outlined {
+  @apply flex items-center justify-center bg-white border-2 border-accent-color rounded-full text-accent-color font-bold h-[60px] px-[51px]
+  hover:border-accent-hover
+  hover:text-accent-hover
+  hover:underline
+}
+
+.divider {
+  @apply mb-[32px] h-[2px] w-14 rounded-md;
+}
+
+.p-light {
+  @apply font-light text-lg leading-8;
+}
+
+.review {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+
+.review::before {
+  content: '';
+  position: absolute;
+
+}
+
+.rev-dots {
+  @apply absolute right-[-48px] top-[-15px] bg-[url('../src/img/rev-dots.svg')] w-[132px] h-[115px];
+}
+
+.slide-bullet {
+  @apply inline-block bg-accent-light w-[10px] h-[10px] rounded-full cursor-pointer hover:scale-110;
+}
+
+.slide-bullet.active {
+  @apply bg-accent-color;
+}
+
+.menu-toggle:before,
+.menu-toggle:after,
+.menu-toggle div {
+  background: rgba(35, 51, 72, 1);
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 3px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.menu-toggle[aria-expanded="true"]:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.menu-toggle[aria-expanded="true"]:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.menu-toggle[aria-expanded="true"] div {
+  transform: scale(0);
+}
+
+.animation-paused {
+  animation-play-state: paused;
+}
