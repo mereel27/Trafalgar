@@ -3,25 +3,37 @@ const closeButton = document.querySelector('.close-menu');
 const menu = document.querySelector('.menu');
 const body = document.body;
 const menuToggle = document.querySelector('.menu-toggle');
+const backdrop = document.querySelector('.backdrop');
+
+const hideMenu = (delay = 300) => {
+  menu.classList.replace('translate-x-0', 'translate-x-full');
+  menuToggle.setAttribute('aria-expanded', false);
+  menu.setAttribute('aria-hidden', true);
+  setTimeout(() => {
+    menu.classList.add('hidden');
+    backdrop.classList.add('hidden');
+    body.classList.remove('overflow-hidden');
+  }, delay);
+};
 
 menuToggle.addEventListener('click', () => {
   const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-  const hidden = menu.getAttribute('aria-hidden') === 'true';
-  
-  menuToggle.setAttribute('aria-expanded', !expanded);
-  menu.setAttribute('aria-hidden', !hidden);
-
   if (!expanded) {
     menu.classList.remove('hidden');
+    menuToggle.setAttribute('aria-expanded', true);
+    menu.setAttribute('aria-hidden', false);
+    backdrop.classList.remove('hidden');
     body.classList.add('overflow-hidden');
     setTimeout(() => {
       menu.classList.replace('translate-x-full', 'translate-x-0');
     }, 50);
   } else {
-    menu.classList.replace('translate-x-0', 'translate-x-full');
-    setTimeout(() => {
-      menu.classList.add('hidden');
-      body.classList.remove('overflow-hidden');
-    }, 300)
+    hideMenu();
   }
+});
+
+const mobile = window.matchMedia('(max-width: 768px)');
+
+window.addEventListener('resize', () => {
+  !mobile.matches && hideMenu(0);
 });

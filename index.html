@@ -20,39 +20,45 @@
   <header class="mt-6 mt-10 lg:mt-14">
     <div class="container">
       <div class="flex justify-between w-full h-14">
-        <div class="flex justify-center items-center text-2xl">
-          <div class="flex justify-center items-center h-10 w-10 mr-3 bg-accent-color rounded-full">
-            <div class="text-white font-bold">T</div>
+        <a href='/' class="block w-fit hover:no-underline flex items-center">
+          <div class="flex justify-center items-center text-2xl">
+            <div class="flex justify-center items-center h-10 w-10 mr-3 bg-accent-color rounded-full">
+              <div class="text-white font-bold">T</div>
+            </div>
+            <span class="block text-logo font-bold mr-auto">Trafalgar</span>
           </div>
-          <span class="block text-logo font-bold mr-auto">Trafalgar</span>
-        </div>
+        </a>
 
         <nav class="hidden md:flex items-center text-lg text-main-text-color/70">
           <ul class="flex lg:gap-10 md:gap-6 gap-4 font-medium whitespace-nowrap">
-            <li><a class="cursor-pointer text-main-text-color/100 font-bold">Home</a></li>
-            <li><a class="cursor-pointer text-secondary-text-color">Find a doctor</a></li>
-            <li><a class="cursor-pointer text-secondary-text-color">Apps</a></li>
-            <li><a class="cursor-pointer text-secondary-text-color">Testimonials</a></li>
-            <li><a class="cursor-pointer text-secondary-text-color">About us</a></li>
+            <li><a class="cursor-pointer text-main-text-color/100 font-bold nav-link">Home</a></li>
+            <li><a class="cursor-pointer text-secondary-text-color nav-link">Find a doctor</a></li>
+            <li><a class="cursor-pointer text-secondary-text-color nav-link">Apps</a></li>
+            <li><a class="cursor-pointer text-secondary-text-color nav-link">Testimonials</a></li>
+            <li><a class="cursor-pointer text-secondary-text-color nav-link">About us</a></li>
           </ul>
         </nav>
 
         <button class="md:hidden menu-toggle w-[40px] z-[100]" aria-expanded="false" aria-controls="menu">
           <div></div>
         </button>
-        <nav
-          class="menu hidden fixed items-center text-2xl md:text-lg text-main-text-color/70 z-50 top-0 bg-white w-full left-0 p-10 h-full translate-x-full transition-transform duration-300"
-          id="menu" aria-hidden="true">
-          <div class="container">
-            <ul class="flex flex-col lg:gap-10 md:gap-6 gap-12 md:gap-4 font-medium whitespace-nowrap mt-14 md:mt-0">
-              <li><a class="cursor-pointer text-main-text-color/100 font-bold">Home</a></li>
-              <li><a class="cursor-pointer">Find a doctor</a></li>
-              <li><a class="cursor-pointer">Apps</a></li>
-              <li><a class="cursor-pointer">Testimonials</a></li>
-              <li><a class="cursor-pointer">About us</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="fixed z-50">
+          <div class="backdrop hidden fixed z-[49] h-full w-full bg-black/30 left-0 top-0"></div>
+          <nav
+            class="menu hidden fixed text-2xl md:text-lg text-main-text-color/70 z-50 top-0 bg-white w-full max-w-[300px] right-0 p-10 h-full translate-x-full transition-transform duration-300"
+            id="menu" aria-hidden="true">
+            <div class="container">
+              <ul
+                class="flex flex-col lg:gap-10 md:gap-6 gap-12 md:gap-4 font-medium whitespace-nowrap mt-24 ml-auto w-fit md:mt-0">
+                <li><a class="cursor-pointer text-main-text-color/100 font-bold">Home</a></li>
+                <li><a class="cursor-pointer">Find a doctor</a></li>
+                <li><a class="cursor-pointer">Apps</a></li>
+                <li><a class="cursor-pointer">Testimonials</a></li>
+                <li><a class="cursor-pointer">About us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -77,7 +83,6 @@
               today</button>
           </div>
           <div class="hidden md:block w-full md:w-1/2 lg:w-[693px] aspect-[693/598] bg-hero bg-contain bg-no-repeat">
-            <!-- <img src="./img/hero.png" alt="" width="693" height="598" /> -->
           </div>
         </div>
       </div>
@@ -94,55 +99,49 @@
         </p>
         <div
           class="boxes-container relative flex flex-wrap justify-between gap-y-[37px] mx-auto mb-[70px] max-w-[1120px]">
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/search.svg" class="mb-6 h-[95px]" />
-            <h3>Search doctor</h3>
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/search.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
+            <h3 class="mx-auto sm:mx-0">Search doctor</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">Choose your
               doctor from thousands of
               specialist, general,
               and trusted hospitals</p>
           </div>
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/farm.svg" class="mb-6 h-[95px]" />
-            <h3>Online pharmacy</h3>
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/farm.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
+            <h3 class="mx-auto sm:mx-0">Online pharmacy</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">Buy your
               medicines with our mobile
               application with a simple delivery system</p>
           </div>
 
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/consult.svg" class="mb-6 h-[95px]" />
-            <h3>Consultation</h3>
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/consult.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
+            <h3 class="mx-auto sm:mx-0">Consultation</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">Free
               consultation with our trusted doctors
               and get the best recomendations</p>
           </div>
 
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/info.svg" class="mb-6 h-[95px]" />
-            <h3>Details info</h3>
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/info.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
+            <h3 class="mx-auto sm:mx-0">Details info</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">Free
               consultation with our trusted doctors
               and get the best recomendations</p>
           </div>
 
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/care.svg" class="mb-6 h-[95px]" />
-            <h3>Emergency care</h3>
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/care.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
+            <h3 class="mx-auto sm:mx-0">Emergency care</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">You can get
               24/7 urgent care for yourself or
               your children and your
               lovely family</p>
           </div>
 
-          <div
-            class="service-box overflow-hidden hover:shadow-box-lg transition-shadow duration-250 shadow-box-xs xs:shadow-box">
-            <img src="src/img/track.svg" class="mb-6 h-[95px]" />
+          <div class="service-box overflow-hidden shadow-box-xs xs:shadow-box">
+            <img src="src/img/track.svg" class="mb-6 h-[95px] mx-auto sm:mx-0" />
             <h3>Tracking</h3>
             <p class="font-light overflow-hidden text-secondary-text-color leading-[1.75] xxs:text-[14px]">Track and
               save your medical history and
@@ -213,16 +212,18 @@
             <!-- Slides -->
             <div class="swiper-slide flex justify-center">
 
-              <article class="review max-w-[1120px] rounded-3xl relative px-12 py-10 lg:pt-14 lg:pb-[90px] flex-grow">
+              <article class="review">
                 <div class="rev-dots"></div>
-                <h2 class="text-white">What our customer are saying</h2>
+                <span class="review-title">What our customer are saying</span>
                 <div class="divider bg-white mx-auto"></div>
                 <div class="review-content ">
                   <div
                     class="user flex items-center leading-8 flex-wrap lg:flex-nowrap gap-y-7 lg:gap-0 justify-center">
-                    <img class="user-photo rounded-full border-4 border-white w-[100px] lg:w-[140px] mx-7"
-                      src="src/img/user.png" />
-                    <div class="user-name text-white whitespace-nowrap mr-7">
+                    <div
+                      class="w-[100px] lg:w-[140px] rounded-full border-4 border-white mx-7 overflow-hidden aspect-square">
+                      <img class="object-cover" src="src/img/user.png" />
+                    </div>
+                    <div class="user-name text-white whitespace-nowrap mr-0 sm:mr-7 text-center sm:text-left">
                       <span class="font-bold text-[22px]">Edward Newgate</span>
                       <br>
                       <span class="text-[18px]">Founder Circle</span>
@@ -238,16 +239,18 @@
             </div>
             <div class="swiper-slide flex justify-center">
 
-              <article class="review max-w-[1120px] rounded-3xl relative px-12 py-10 lg:pt-14 lg:pb-[90px] flex-grow">
+              <article class="review">
                 <div class="rev-dots"></div>
-                <h2 class="text-white">What our customer are saying</h2>
+                <span class="review-title">What our customer are saying</span>
                 <div class="divider bg-white mx-auto"></div>
                 <div class="review-content ">
                   <div
                     class="user flex items-center leading-8 flex-wrap lg:flex-nowrap gap-y-7 lg:gap-0 justify-center">
-                    <img class="user-photo rounded-full border-4 border-white w-[100px] lg:w-[140px] mx-7"
-                      src="src/img/user.png" />
-                    <div class="user-name text-white whitespace-nowrap mr-7">
+                    <div
+                      class="w-[100px] lg:w-[140px] rounded-full border-4 border-white mx-7 overflow-hidden aspect-square">
+                      <img class="object-cover" src="src/img/user.png" />
+                    </div>
+                    <div class="user-name text-white whitespace-nowrap mr-0 sm:mr-7 text-center sm:text-left">
                       <span class="font-bold text-[22px]">Edward Newgate</span>
                       <br>
                       <span class="text-[18px]">Founder Circle</span>
@@ -263,16 +266,18 @@
             </div>
             <div class="swiper-slide flex justify-center">
 
-              <article class="review max-w-[1120px] rounded-3xl relative px-12 py-10 lg:pt-14 lg:pb-[90px] flex-grow">
+              <article class="review">
                 <div class="rev-dots"></div>
-                <h2 class="text-white">What our customer are saying</h2>
+                <span class="review-title">What our customer are saying</span>
                 <div class="divider bg-white mx-auto"></div>
                 <div class="review-content ">
                   <div
                     class="user flex items-center leading-8 flex-wrap lg:flex-nowrap gap-y-7 lg:gap-0 justify-center">
-                    <img class="user-photo rounded-full border-4 border-white w-[100px] lg:w-[140px] mx-7"
-                      src="src/img/user.png" />
-                    <div class="user-name text-white whitespace-nowrap mr-7">
+                    <div
+                      class="w-[100px] lg:w-[140px] rounded-full border-4 border-white mx-7 overflow-hidden aspect-square">
+                      <img class="object-cover" src="src/img/user.png" />
+                    </div>
+                    <div class="user-name text-white whitespace-nowrap mr-0 sm:mr-7 text-center sm:text-left">
                       <span class="font-bold text-[22px]">Edward Newgate</span>
                       <br>
                       <span class="text-[18px]">Founder Circle</span>
@@ -290,16 +295,18 @@
             </div>
             <div class="swiper-slide flex justify-center">
 
-              <article class="review max-w-[1120px] rounded-3xl relative px-12 py-10 lg:pt-14 lg:pb-[90px] flex-grow">
+              <article class="review">
                 <div class="rev-dots"></div>
-                <h2 class="text-white">What our customer are saying</h2>
+                <span class="review-title">What our customer are saying</span>
                 <div class="divider bg-white mx-auto"></div>
                 <div class="review-content ">
                   <div
                     class="user flex items-center leading-8 flex-wrap lg:flex-nowrap gap-y-7 lg:gap-0 justify-center">
-                    <img class="user-photo rounded-full border-4 border-white w-[100px] lg:w-[140px] mx-7"
-                      src="src/img/user.png" />
-                    <div class="user-name text-white whitespace-nowrap mr-7">
+                    <div
+                      class="w-[100px] lg:w-[140px] rounded-full border-4 border-white mx-7 overflow-hidden aspect-square">
+                      <img class="object-cover" src="src/img/user.png" />
+                    </div>
+                    <div class="user-name text-white whitespace-nowrap mr-0 sm:mr-7 text-center sm:text-left">
                       <span class="font-bold text-[22px]">Edward Newgate</span>
                       <br>
                       <span class="text-[18px]">Founder Circle</span>
@@ -358,9 +365,9 @@
               </div>
               <div
                 class="flex flex-col flex-grow pt-[21px] lg:pr-[50px] pr-[24px] lg:pl-[33px] pl-[18px] pb-[35px] bg-white">
-                <h4 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">Disease
+                <h3 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">Disease
                   detection, check
-                  up in the laboratory</h4>
+                  up in the laboratory</h3>
                 <p class="font-light text-secondary-text-color leading-[1.75] mb-[25px]">In this case, the role of the
                   health
                   laboratory is very important to do
@@ -387,9 +394,9 @@
               </div>
               <div
                 class="flex flex-col flex-grow pt-[21px] lg:pr-[50px] pr-[24px] lg:pl-[33px] pl-[18px] pb-[35px] bg-white">
-                <h4 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">
+                <h3 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">
                   Herbal medicines that are safe for consumption
-                </h4>
+                </h3>
                 <p class="font-light text-secondary-text-color leading-[1.75] mb-[25px]">
                   Herbal medicine is very widely used at this time because of its very good for your health...
                 </p>
@@ -417,8 +424,8 @@
               </div>
               <div
                 class="flex flex-col flex-grow pt-[21px] lg:pr-[50px] pr-[24px] lg:pl-[33px] pl-[18px] pb-[35px] bg-white">
-                <h4 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">
-                  Natural care for healthy facial skin</h4>
+                <h3 class="text-[18px] lg:text-[21px] leading-[32px] font-bold mb-[12px] lg:whitespace-pre-line">
+                  Natural care for healthy facial skin</h3>
                 <p class="font-light text-secondary-text-color leading-[1.75] mb-[25px] whitespace-normal">
                   A healthy lifestyle should start from now and also for your skin health. There are some...</p>
                 <a class="mt-auto">
@@ -452,45 +459,51 @@
     <div class="container relative">
       <div class="flex max-w-[1120px] mx-auto flex-col-reverse lg:flex-row gap-[50px] lg:gap-0">
         <div class="lg:mr-[100px] xl:mr-[145px]">
-          <div class="flex items-center mb-[17px] justify-center xs:justify-start">
-            <div class="flex justify-center items-center h-[41px] w-[41px] mr-3 bg-white rounded-full">
-              <div class="text-accent-color text-[26px] font-bold">T</div>
+          <a href='/' class="block w-fit text-white hover:no-underline mx-auto xs:mx-0">
+            <div class="flex items-center mb-[17px] w-fit">
+              <div class="flex justify-center items-center h-[41px] w-[41px] mr-3 bg-white rounded-full">
+                <div class="text-accent-color text-[26px] font-bold">T</div>
+              </div>
+              <span class="font-bold text-[24px] leading-[30px]">Trafalgar</span>
             </div>
-            <span class="font-bold text-[24px] leading-[30px]">Trafalgar</span>
-          </div>
+          </a>
           <p class="w-full lg:w-[391px] mb-[31px] text-lg font-light xl:whitespace-pre-line text-center xs:text-left">
             Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
           </p>
-          <p class="leading-7 whitespace-normal text-center lg:text-left">© Trafalgar PTY LTD 2020. All rights reserved
+          <p class="leading-7 whitespace-normal text-center lg:text-left">&#169; Trafalgar PTY LTD 2020. All rights
+            reserved
           </p>
         </div>
         <div class="flex w-full flex-col xs:flex-row justify-between xs:items-center gap-[30px]">
           <div>
-            <h4 class="leading-[60px] text-center xs:text-left text-[1.5rem] xs:text-[1.25rem]">Company</h4>
-            <div class="text-xl xs:text-lg text-center xs:text-left">
-              <a class="font-light text-white leading-[38px] block">About</a>
-              <a class="font-light text-white leading-[38px] block">Find a doctor</a>
-              <a class="font-light text-white leading-[38px] block">Testimonials</a>
-              <a class="font-light text-white leading-[38px] block">Apps</a>
-            </div>
+            <span
+              class="block leading-[60px] text-center xs:text-left text-[1.5rem] xs:text-[1.25rem] font-bold">Company</span>
+            <ul class="text-xl xs:text-lg text-center xs:text-left">
+              <li><a class="footer-link">About</a></li>
+              <li><a class="footer-link">Find a doctor</a></li>
+              <li><a class="footer-link">Testimonials</a></li>
+              <li><a class="footer-link">Apps</a></li>
+            </ul>
           </div>
           <div>
-            <h4 class="leading-[60px] text-center xs:text-left text-[1.5rem] xs:text[1.25rem]">Region</h4>
-            <div class="text-xl xs:text-lg text-center xs:text-left">
-              <a class="font-light text-white leading-[38px] block">Indonesia</a>
-              <a class="font-light text-white leading-[38px] block">Singapore</a>
-              <a class="font-light text-white leading-[38px] block">Hongkong</a>
-              <a class="font-light text-white leading-[38px] block">Canada</a>
-            </div>
+            <span
+              class="block leading-[60px] text-center xs:text-left text-[1.5rem] xs:text-[1.25rem] font-bold">Region</span>
+            <ul class="text-xl xs:text-lg text-center xs:text-left">
+              <li><a class="footer-link">Indonesia</a></li>
+              <li><a class="footer-link">Singapore</a></li>
+              <li><a class="footer-link">Hongkong</a></li>
+              <li><a class="footer-link">Canada</a></li>
+            </ul>
           </div>
           <div>
-            <h4 class="leading-[60px] text-center xs:text-left text-[1.5rem] xs:text-[1.25rem]">Help</h4>
-            <div class="text-xl xs:text-lg text-center xs:text-left">
-              <a class="font-light text-white leading-[38px] block">Help center </a>
-              <a class="font-light text-white leading-[38px] block">Contact support</a>
-              <a class="font-light text-white leading-[38px] block">Instructions</a>
-              <a class="font-light text-white leading-[38px] block">How it works</a>
-            </div>
+            <span
+              class="block leading-[60px] text-center xs:text-left text-[1.5rem] xs:text-[1.25rem] font-bold">Help</span>
+            <ul class="text-xl xs:text-lg text-center xs:text-left">
+              <li><a class="footer-link">Help center </a></li>
+              <li><a class="footer-link">Contact support</a></li>
+              <li><a class="footer-link">Instructions</a></li>
+              <li><a class="footer-link">How it works</a></li>
+            </ul>
           </div>
         </div>
       </div>
