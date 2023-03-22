@@ -763,10 +763,6 @@ html {
   margin-right: auto;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
@@ -1202,10 +1198,6 @@ html {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .align-middle {
@@ -1799,6 +1791,10 @@ blockquote p::after {
   .xs\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .xs\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .xs\:flex-row {

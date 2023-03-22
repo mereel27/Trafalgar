@@ -8,19 +8,20 @@
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script type="module" defer src="src/js/animations.js"></script>
+  <script type="module" defer src="src/js/swiper.js"></script>
+  <script type="module" defer src="src/js/mobile-menu.js"></script>
   <title>Trafalgar</title>
 </head>
 
 <body>
-  <header class="mt-6 mt-10 lg:mt-14">
+  <header class="mt-6 xs:mt-10 lg:mt-14">
     <div class="container">
       <div class="flex justify-between w-full h-14">
-        <a href='./index.html' class="block w-fit hover:no-underline flex items-center">
+        <a href='./index.html' class="w-fit hover:no-underline flex items-center">
           <div class="flex justify-center items-center text-2xl">
             <div class="flex justify-center items-center h-10 w-10 mr-3 bg-accent-color rounded-full">
               <div class="text-white font-bold">T</div>
@@ -30,7 +31,7 @@
         </a>
 
         <nav class="hidden md:flex items-center text-lg text-main-text-color/70">
-          <ul class="flex lg:gap-10 md:gap-6 gap-4 font-medium whitespace-nowrap">
+          <ul class="flex gap-4 md:gap-6 lg:gap-10 font-medium whitespace-nowrap">
             <li><a class="cursor-pointer text-main-text-color/100 font-bold nav-link">Home</a></li>
             <li><a class="cursor-pointer text-secondary-text-color nav-link">Find a doctor</a></li>
             <li><a class="cursor-pointer text-secondary-text-color nav-link">Apps</a></li>
@@ -49,7 +50,7 @@
             id="menu" aria-hidden="true">
             <div class="container">
               <ul
-                class="flex flex-col lg:gap-10 md:gap-6 gap-12 md:gap-4 font-medium whitespace-nowrap mt-24 ml-auto w-fit md:mt-0">
+                class="flex flex-col lg:gap-10 gap-12 md:gap-4 font-medium whitespace-nowrap mt-24 ml-auto w-fit md:mt-0">
                 <li><a class="cursor-pointer text-main-text-color/100 font-bold">Home</a></li>
                 <li><a class="cursor-pointer">Find a doctor</a></li>
                 <li><a class="cursor-pointer">Apps</a></li>
@@ -510,9 +511,6 @@
       <div class="absolute bottom-[-130px] left-[-45px] w-[131px] h-[115px] bg-[url('../src/img/rev-dots.svg')] "></div>
     </div>
   </footer>
-  <script type="module" src="src/js/swiper.js"></script>
-  <script type="module" src="src/js/mobile-menu.js"></script>
-  <script type="module" src="src/js/animations.js"></script>
 </body>
 
 </html>
