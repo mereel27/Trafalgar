@@ -707,14 +707,6 @@ html {
   margin-bottom: 2rem;
 }
 
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
-.mb-\[120px\] {
-  margin-bottom: 120px;
-}
-
 .mb-\[12px\] {
   margin-bottom: 12px;
 }
@@ -1010,10 +1002,6 @@ html {
   overflow: hidden;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .whitespace-normal {
   white-space: normal;
 }
@@ -1160,12 +1148,20 @@ html {
   padding-bottom: 100px;
 }
 
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
 .pb-\[150px\] {
   padding-bottom: 150px;
 }
 
 .pb-\[200px\] {
   padding-bottom: 200px;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
 }
 
 .pb-\[35px\] {
@@ -1194,14 +1190,6 @@ html {
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pb-\[20px\] {
-  padding-bottom: 20px;
-}
-
-.pb-\[120px\] {
-  padding-bottom: 120px;
 }
 
 .text-left {
@@ -1883,10 +1871,6 @@ blockquote p::after {
     margin-bottom: 200px;
   }
 
-  .md\:mb-\[220px\] {
-    margin-bottom: 220px;
-  }
-
   .md\:mb-\[223px\] {
     margin-bottom: 223px;
   }
@@ -1968,16 +1952,16 @@ blockquote p::after {
     padding-bottom: 150px;
   }
 
+  .md\:pb-\[200px\] {
+    padding-bottom: 200px;
+  }
+
   .md\:pb-\[230px\] {
     padding-bottom: 230px;
   }
 
   .md\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .md\:pb-\[200px\] {
-    padding-bottom: 200px;
   }
 
   .md\:text-left {
@@ -1997,10 +1981,6 @@ blockquote p::after {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-\[265px\] {
-    margin-bottom: 265px;
-  }
-
   .lg\:ml-auto {
     margin-left: auto;
   }
@@ -2070,6 +2050,10 @@ blockquote p::after {
     padding-bottom: 192px;
   }
 
+  .lg\:pb-\[265px\] {
+    padding-bottom: 265px;
+  }
+
   .lg\:pb-\[90px\] {
     padding-bottom: 90px;
   }
@@ -2092,10 +2076,6 @@ blockquote p::after {
 
   .lg\:pt-\[118px\] {
     padding-top: 118px;
-  }
-
-  .lg\:pb-\[265px\] {
-    padding-bottom: 265px;
   }
 
   .lg\:text-left {

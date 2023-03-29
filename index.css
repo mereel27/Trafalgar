@@ -76,7 +76,7 @@ blockquote p::after {
   hover:text-white
   transition
   duration-[250ms]
-  active:translate-y-[0.3rem]
+  active:translate-y-[0.3rem];
 }
 
 .divider {
