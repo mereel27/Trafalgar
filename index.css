@@ -70,12 +70,12 @@ blockquote p::after {
 }
 
 .btn-outlined {
-  @apply flex items-center justify-center bg-white border-2 border-accent-color rounded-full text-accent-color font-bold h-[60px] px-[51px]
-  hover:border-accent-hover
-  hover:bg-accent-hover
-  hover:text-white
-  transition
-  duration-[250ms]
+  @apply flex items-center justify-center
+  bg-white border-2 border-accent-color rounded-full 
+  text-accent-color font-bold 
+  h-[60px] px-[51px]
+  hover:border-accent-hover hover:bg-accent-hover hover:text-white
+  transition duration-[250ms]
   active:translate-y-[0.3rem];
 }
 
