@@ -1010,6 +1010,10 @@ html {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
@@ -1192,6 +1196,14 @@ html {
   padding-top: 80px;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1336,14 +1348,16 @@ html {
   outline-color: #ef4444;
 }
 
-.transition-all {
-  transition-property: all;
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1586,6 +1600,11 @@ blockquote p::after {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.btn-outlined:active {
+  --tw-translate-y: 0.3rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .divider {
   margin-bottom: 32px;
   height: 2px;
@@ -1771,6 +1790,11 @@ blockquote p::after {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.active\:translate-y-\[0\.3rem\]:active {
+  --tw-translate-y: 0.3rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .active\:scale-90:active {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
@@ -1952,6 +1976,10 @@ blockquote p::after {
     padding-top: 5rem;
   }
 
+  .md\:pb-\[200px\] {
+    padding-bottom: 200px;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2064,6 +2092,10 @@ blockquote p::after {
 
   .lg\:pt-\[118px\] {
     padding-top: 118px;
+  }
+
+  .lg\:pb-\[265px\] {
+    padding-bottom: 265px;
   }
 
   .lg\:text-left {

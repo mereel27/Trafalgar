@@ -16,6 +16,8 @@ const hideMenu = (delay = 300) => {
   }, delay);
 };
 
+backdrop.addEventListener('click', () => hideMenu());
+
 menuToggle.addEventListener('click', () => {
   const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
   if (!expanded) {
