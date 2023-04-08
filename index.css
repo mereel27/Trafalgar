@@ -90,6 +90,7 @@ blockquote p::after {
 .review {
   @apply max-w-[1120px] rounded-3xl relative 
   px-12 xs:px-14 py-10 lg:pt-14 lg:pb-[90px] 
+  mx-auto
   flex-grow;
   background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
 }
