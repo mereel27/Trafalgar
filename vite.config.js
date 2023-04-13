@@ -1,3 +1,5 @@
-export default {
-  base: 'Trafalgar'
-}
+import { defineConfig } from "vite"
+
+export default defineConfig ({
+  base: '/Trafalgar/',
+})
