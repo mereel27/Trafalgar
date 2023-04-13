@@ -1,16 +1,20 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+
+const bullets = document.querySelectorAll('.slide-bullet');
 
 const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
   grabCursor: true,
   spaceBetween: 20,
   direction: 'horizontal',
   loop: true,
-  on: {
-    activeIndexChange: function() {
-      const bullets = document.querySelectorAll('.slide-bullet');
-      removeActive();
-      bullets[this.realIndex].classList.add('active');
-    }
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+    bulletActiveClass: "active",
+    bulletClass: 'slide-bullet',
   },
   navigation: {
     nextEl: '.slide-next',
@@ -18,8 +22,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const currentIndex = swiper.activeIndex - 1;
-const bullets = document.querySelectorAll('.slide-bullet');
+const currentIndex = swiper.activeIndex;
 
 function removeActive() {
   const currEl = document.querySelector('.active');
@@ -28,9 +31,4 @@ function removeActive() {
 
 bullets.forEach((bullet, index) => {
   index === currentIndex && bullet.classList.add('active')
-  bullet.addEventListener('click', () => {
-    swiper.slideTo(index + 1);
-    removeActive();
-    bullet.classList.add('active');
-  })
 })

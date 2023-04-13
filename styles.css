@@ -9,6 +9,7 @@
   html {
     font-family: 'Mulish', sans-serif;
   }
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,7 +110,7 @@ blockquote p::after {
 }
 
 .slide-bullet {
-  @apply inline-block bg-accent-light w-[10px] h-[10px] rounded-full cursor-pointer hover:scale-110;
+  @apply inline-block bg-accent-light w-[10px] h-[10px] mx-[5px] rounded-full cursor-pointer hover:scale-110;
 }
 
 .slide-bullet.active {
