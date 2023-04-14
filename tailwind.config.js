@@ -37,6 +37,8 @@ module.exports = {
         'transition-bot': 'linear-gradient(to bottom, transparent, #fff)',
         'blueShape': 'url("./src/img/blue-shape.svg")',
         'blueShape2': 'url("./src/img/blue-shape2.svg")',
+        'revDots': 'url("./src/img/rev-dots.svg")',
+        'dots': 'url("./src/img/bg-dots.svg")',
       },
     },
     container: {
