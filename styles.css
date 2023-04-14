@@ -58,13 +58,13 @@ blockquote p::after {
 }
 
 .services:before {
-  @apply absolute content-[''] top-[200px] opacity-60 sm:bg-[length:_70%] lg:bg-contain bg-[url('../src/img/blue-shape.svg')] bg-no-repeat z-[-1];
+  @apply absolute content-[''] top-[200px] opacity-60 sm:bg-[length:_70%] lg:bg-contain bg-[url('./src/img/blue-shape.svg')] bg-no-repeat z-[-1];
   width: 938px;
   height: 670px;
 }
 
 .boxes-container:before {
-  @apply absolute content-[''] z-[-1] top-1/2 right-0 bg-[url('../src/img/bg-dots.svg')] bg-no-repeat bg-contain;
+  @apply absolute content-[''] z-[-1] top-1/2 right-0 bg-[url('./src/img/bg-dots.svg')] bg-no-repeat bg-contain;
   transform: translate(50%, -50%);
   width: 132px;
   height: 115px;
@@ -106,7 +106,7 @@ blockquote p::after {
 }
 
 .rev-dots {
-  @apply absolute right-[-48px] top-[-15px] bg-[url('../src/img/rev-dots.svg')] w-[132px] h-[115px];
+  @apply absolute right-[-48px] top-[-15px] bg-[url('./src/img/rev-dots.svg')] w-[132px] h-[115px];
 }
 
 .slide-bullet {
